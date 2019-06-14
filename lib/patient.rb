@@ -22,4 +22,10 @@ class Patient
     end
   end
   
+  def doctors
+    self.appointments.collect do |apt|
+      apt.doctor
+    end
+  end
+  
 end
